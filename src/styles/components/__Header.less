@@ -20,13 +20,22 @@
   transition: 0.4s;
 
   &-link {
-    display: inline-block;
+    display: block;
     height: 100%;
+    width: 100%;
+    &:before{
+      content:"";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      font-size: 0;
+    }
   }
 
   &-img {
-    height: 100%;
-    width: auto;
+   .img-optimized();
+     display: inline-block;
+     vertical-align: middle;
   }
 
 
@@ -123,7 +132,7 @@
       }
 
       &:focus {
-        width: 400px;
+        width: 250px;
         z-index: 1;
         border-bottom: 1px solid #BBB;
         cursor: text;
