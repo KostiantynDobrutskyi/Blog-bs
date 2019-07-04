@@ -26,7 +26,7 @@ gulp.task("styles:app", function () {
         .pipe(plugins.plumber())
         .pipe(plugins.less())
         .pipe(plugins.autoprefixer())
-        // .pipe(plugins.cleanCss())
+        .pipe(plugins.cleanCss())
         .pipe(plugins.rename({suffix: ".min"}))
         .pipe(gulp.dest("dist/css"))
         .pipe(sync.stream())
