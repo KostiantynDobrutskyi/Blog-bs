@@ -14,7 +14,6 @@ html, body {
 
 .wrapper {
   min-height: 100%;
-  background: darkviolet;
   margin-bottom: -@footerHeight;
 
   &:after {
@@ -39,6 +38,10 @@ html, body {
   margin-right: @sidebarWidth;
   padding-bottom: @footerHeight;
 
+  .sidebar-author, .sidebar-innerInfo{
+    display: none;
+  }
+
 }
 
 .sidebar {
@@ -55,11 +58,21 @@ html, body {
 }
 
 @media screen and (max-width: 800px) {
-  .sidebar{
+  .sidebar {
     display: none;
   }
 
   .content{
     margin: 0;
+
+    .sidebar-author, .sidebar-innerInfo{
+      display: block;
+      padding-top: 20px;
+    }
+
+    .sidebar-innerInfo{
+      margin: auto 10%;
+    }
+
   }
 }

@@ -1,6 +1,9 @@
 <!-- @@master= components/master.tmpl.html {"title": "My first blog"}-->
 
 
+<!--******************************************************************
+***************************Header section*****************************
+*******************************************************************-->
 <!-- @@block= header -->
 <div class="header-wrapper">
     <div class="logo">
@@ -13,8 +16,6 @@
     <label for="chk" class="show-menu-btn">
         <i class="fas fa-ellipsis-h"></i>
     </label>
-
-
     <ul class="menu">
 
         <label for="chk" class="hide-menu-btn">
@@ -33,13 +34,31 @@
 
 
     </ul>
+
+
+    <div class="header-container-search">
+        <input class="search" name="search" type="text" placeholder="What're we looking for ?">
+        <i class="fa fa-search search-submit" ></i>
+    </div>
+
+    <div class="header-container-social">
+        <div class="sidebar-social">
+            <a class="fa fa-facebook" href="#"></a>
+            <a class="fa fa-twitter" href="#"></a>
+            <a class="fa fa-google-plus" href="#"></a>
+            <a class="fa fa-youtube" href="#"></a>
+            <a class="fa fa-linkedin" href="#"></a>
+        </div>
+    </div>
+
 </div>
 <!-- @@close -->
 
 
+<!--******************************************************************
+***************************Content section****************************
+*******************************************************************-->
 <!-- @@block= content -->
-
-
 <div class="card">
     <div class="post">
         <div class="post-img-container">
@@ -49,7 +68,9 @@
         </div>
         <div class="post-info">
             <h3 class="post-title">Post Title</h3>
-            <div class="post-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, ut.</div>
+            <div class="post-desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, ut.
+            </div>
             <div class="post-author">by Author</div>
             <div class="post-statistic-wrp">
                 <span class="post-time">18 minutes ago</span>
@@ -319,15 +340,85 @@
 
 
 </div>
+<!-- @@close -->
 
 
+<!--******************************************************************
+***************************Sidebar section****************************
+*******************************************************************-->
 
+<!-- @@block= author -->
+<div class="sidebar-author">
+
+    <div class="sidebar-author-imgContainer">
+        <img class="sidebar-author-img"
+             src="https://loremflickr.com/200/200/men,paris/all"
+             alt="nature">
+    </div>
+
+    <div class="sidebar-author-info ">
+        <h3 class="sidebar-author-info-name post-title">Jone Dou</h3>
+        <div class="sidebar-author-info-desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, ut.
+        </div>
+
+    </div>
+</div>
 <!-- @@close -->
 
 <!-- @@block= sidebar -->
-sidebar
+<div class="sidebar-innerInfo">
+
+    <div class="sidebar-social">
+        <a class="fa fa-facebook" href="#"></a>
+        <a class="fa fa-twitter" href="#"></a>
+        <a class="fa fa-google-plus" href="#"></a>
+        <a class="fa fa-youtube" href="#"></a>
+        <a class="fa fa-linkedin" href="#"></a>
+    </div>
+
+    <div class="sidebar-subscribe">
+        <div class="sidebar-subscribe-wrapper">
+            <h4 class="sidebar-subscribe-title">SUBSCRIBE TO OUR NEWSLETTER</h4>
+            <input type="text" name="name" class="sidebar-subscribe-name" placeholder="Your name">
+            <input type="email" name="email" class="sidebar-subscribe-email" placeholder="Your e-mail">
+            <input type="button" class="sidebar-subscribe-btn" value="Subscribe">
+        </div>
+    </div>
+
+    <div class="sidebar-search">
+        <input type="text" class="sidebar-search-input">
+        <input type="button" class="sidebar-search-btn" value="Search">
+    </div>
+
+    <div class="sidebar-tags">
+        <a href="#">tags1</a>
+        <a href="#">tags2</a>
+        <a href="#">tags3</a>
+        <a href="#">tags4</a>
+        <a href="#">tags5</a>
+        <a href="#">tags6</a>
+    </div>
+
+    <div class="sidebar-comments">
+        <div class="sidebar-comments-imgContainer">
+            <img src="http://placehold.it/200x300" alt="" class="sidebar-comments-img">
+        </div>
+        <div class="sidebar-comments-info">
+            <span class="sidebar-comments-author">Jone Dou</span>
+            <span class="sidebar-comments-time">5 days ago</span>
+            <div class="sidebar-comments-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur,
+                cum.
+            </div>
+        </div>
+    </div>
+</div>
 <!-- @@close -->
 
+
+<!--******************************************************************
+***************************Footer section*****************************
+*******************************************************************-->
 <!-- @@block= footer -->
 footer
 <!-- @@close -->
