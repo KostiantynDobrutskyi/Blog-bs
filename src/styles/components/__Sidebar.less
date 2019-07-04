@@ -4,7 +4,8 @@
     max-width: 100%;
     height: 100%;
     text-align: center;
-    background: darkkhaki;
+    background: #737c8b + 111;
+    padding: 40px 0;
 
     &-imgContainer {
       width: 200px;
@@ -16,7 +17,7 @@
 
       &:hover{
         cursor: pointer;
-        box-shadow: 0 0 5px 2px red;
+        box-shadow: 0 0 5px 2px #000;
 
       }
 
@@ -34,9 +35,13 @@
 
       &-name {
         margin: 0;
-        font-size: 20px;
+        font-size: 28px;
         text-transform: uppercase;
         font-weight: normal;
+      }
+
+      &-desc{
+        font-size: 20px;
       }
     }
   }
@@ -70,8 +75,8 @@
 
   &-subscribe {
     min-height: 150px;
-    max-height: 200px;
-    background: chocolate;
+    max-height: 250px;
+    padding: 40px 0;
 
     &-title {
       margin: 0 20px;
@@ -104,14 +109,15 @@
     &-btn {
       border: none;
       text-align: center;
-      background: green;
+      background: #a77cf4;
       transition: .4s;
       text-transform: uppercase;
-      font-weight: bold;
+      font-weight: 400;
+      color: #fff;
 
 
       &:hover {
-        background: lime;
+        background: #8e62dc;
         cursor: pointer;
       }
 
@@ -174,7 +180,7 @@
 
   &-tags{
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 40px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -213,7 +219,7 @@
 
       &:hover{
         cursor: pointer;
-        box-shadow: 0 0 5px 2px red;
+        box-shadow: 0 0 5px 2px #000;
 
       }
 
@@ -222,7 +228,7 @@
     &-img{
       height: 100%;
       width: auto;
-      ;
+
 
 
 
@@ -247,6 +253,12 @@
     &-time{
       font-size: 12px;
       color: #333;
+    }
+
+    &-desc{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 

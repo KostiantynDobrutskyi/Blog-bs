@@ -1,4 +1,5 @@
 @import "__helpers";
+@import "__variables";
 
 
 ///*****************************************************************
@@ -59,10 +60,10 @@
     width: 100%;
     text-decoration: none;
     transition: 0.4s;
-    color: #acb;
+    color: @textColor1;
 
     &:hover {
-      color: #3498db;
+      color: @textColor1 + 111;
     }
   }
 }
@@ -164,7 +165,7 @@
       & a{
         &:hover{
           transform: none;
-          box-shadow: 0 0 5px 2px red;
+          box-shadow: 0 0 5px 2px #000;
 
         }
       }
@@ -195,7 +196,7 @@
     position: fixed;
     width: 50%;
     height: 100vh;
-    background: #333;
+    background: #737c8b + 1111;
     left: -100%;
     top: 0;
     text-align: center;
